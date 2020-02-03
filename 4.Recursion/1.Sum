@@ -1,0 +1,41 @@
+#include<stdio.h>
+int sum(int no);
+int main(void)
+{
+	int n=5,ans=0;
+	ans= sum(n);
+	printf("\n ans =%d ", ans);
+	return 0;
+}
+int sum(int no)
+{
+	int add=0;
+	if(no==1)
+	{
+		printf("\n no=%d [%u] add=1", no, &no);
+		return 1;
+	}
+	else
+	{
+		add= no + sum(no-1);
+		printf("\n no=%d [%u] add=%d [%u]", no, &no, add,&add );
+		return add;
+	}
+}
+
+/* no-1
+ no=1 [3011103868] add=1
+ no=2 [3011103916] add=3 [3011103932]
+ no=3 [3011103964] add=6 [3011103980]
+ no=4 [3011104012] add=10 [3011104028]
+ no=5 [3011104060] add=15 [3011104076]
+ ans =15 */
+
+/* --no
+no=1 [3412551132] add=1
+no=1 [3412551180] add=2 [3412551196]
+no=2 [3412551228] add=4 [3412551244]
+no=3 [3412551276] add=7 [3412551292]
+no=4 [3412551324] add=11 [3412551340]
+ans =11
+*/
