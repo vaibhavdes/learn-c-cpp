@@ -5,6 +5,8 @@ int main(void)
   
 	FILE *fpRead=NULL;
 	unsigned int counter,alphabets, digits, tabs, lines , spaces;
+	
+	// File Name Here i.e file1.txt and 'r' is operation to perform
 	fpRead=fopen("file1.txt", "r");                                         // read mode
   
 	if(fpRead==NULL)
