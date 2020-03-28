@@ -4,6 +4,7 @@ using namespace std;
 #include"../include/Complex.h"
 using namespace ncomplex;
 
+// :: Scope Resolution
 Complex::Complex( int real, int imag  ) : real( real ), imag( imag )
 {	}
 void Complex::acceptRecord( void )
