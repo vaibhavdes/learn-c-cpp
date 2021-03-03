@@ -2,7 +2,7 @@
 
 #Update (2020)
 Learn to Code (Language & Framework) on Instagram
-Follow Me : www.instagram.com/vaibhav.py
+Follow Me : www.instagram.com/vaibhavkurkute
 
 
 Learn C and C++ ( Basics to Advance )
